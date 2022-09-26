@@ -14,8 +14,6 @@ spec:
     chart: apache
     helm:
       values: |
-        image:
-          tag: 8.12.1
         ingress:
           annotations:
             cert-manager.io/cluster-issuer: letsencrypt-staging
