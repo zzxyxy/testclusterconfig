@@ -23,7 +23,7 @@ spec:
           tls:
             - hosts:
               - test.zxyxy.net
-            secretName: test.zxyxy.net-tls
+                secretName: test.zxyxy.net-tls
   destination:
     namespace: webapp
     server: https://kubernetes.default.svc
