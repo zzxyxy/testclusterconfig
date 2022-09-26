@@ -10,8 +10,7 @@ spec:
   source:
     path: helm
     repoURL: https://github.com/zzxyxy/testclusterconfig.git
-    targetRevision: 8.2.4
-    chart: redis-cluster
+    targetRevision: HEAD
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
