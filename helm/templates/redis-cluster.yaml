@@ -11,7 +11,7 @@ metadata:
   name: redis-cluster
   namespace: redis-cluster
 spec:
-  clusterSize: 5
+  clusterSize: 2
   kubernetesConfig:
     image: 'quay.io/opstree/redis:v6.2.5'
     imagePullPolicy: IfNotPresent
