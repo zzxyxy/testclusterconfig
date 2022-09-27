@@ -36,5 +36,4 @@ spec:
         memory: 128Mi
   redisFollower:
     replicas: 0
-    serviceType: ClusterIP
     affinity: {}
