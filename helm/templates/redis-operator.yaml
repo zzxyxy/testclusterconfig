@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: redis
+  name: redis-operator
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    path: helm-charts
-    repoURL: https://ot-container-kit.github.io/
+    path: helm
+    repoURL: https://ot-container-kit.github.io/helm-charts
     targetRevision: 0.11.2
     chart: redis-operator
   destination:
