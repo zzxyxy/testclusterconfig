@@ -4,6 +4,7 @@ kind: Namespace
 metadata:
   name: redis-cluster
 
+
 ---
 apiVersion: redis.redis.opstreelabs.in/v1beta1
 kind: RedisCluster
