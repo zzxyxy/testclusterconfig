@@ -4,6 +4,18 @@ kind: Namespace
 metadata:
   name: redis-cluster
 
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: redis-cluster
+  namespace: redis-cluster
+  labels:
+    app: redis-cluster
+type: Opaque
+data:
+  redis-password: "ZnN0N085WWhubGR1MnpxUVFaU0dtYkRDSmZ4N2tPCg=="
+# fst7O9Yhnldu2zqQQZSGmbDCJfx7kO
 
 ---
 apiVersion: redis.redis.opstreelabs.in/v1beta1
