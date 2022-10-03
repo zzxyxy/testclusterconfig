@@ -36,8 +36,8 @@ spec:
         cpu: 101m
         memory: 128Mi
     redisSecret:
-      name: redis-cluster
-      key: redis-password
+      name: "redis-cluster"
+      key: "redis-password"
   redisExporter:
     enabled: true
     image: 'quay.io/opstree/redis-exporter:1.0'
