@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app
+  name: redis-operator
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -9,14 +9,15 @@ spec:
   project: default
   source:
     path: helm
-    repoURL: https://github.com/zzxyxy/testclusterconfig.git
-    targetRevision: HEAD
+    repoURL: https://ot-container-kit.github.io/helm-charts
+    targetRevision: 0.11.2
+    chart: redis-operator
   destination:
-    namespace: argocd
+    namespace: redis-operator
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       selfHeal: true
       prune: true
-    syncOptions: 
-    - CreateNamespace=true
+    syncOptions:
+      - CreateNamespace=true

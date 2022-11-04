@@ -8,15 +8,15 @@ metadata:
 spec:
   project: default
   source:
-    path: helm
+    path: redis-cluster
     repoURL: https://github.com/zzxyxy/testclusterconfig.git
     targetRevision: HEAD
   destination:
-    namespace: argocd
+    namespace: redis-cluster
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       selfHeal: true
       prune: true
-    syncOptions: 
+    syncOptions:
     - CreateNamespace=true
