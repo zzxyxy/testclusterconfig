@@ -41,7 +41,7 @@ spec:
         paths:
           - backend:
               service:
-                name: hello-k8s
+                name: cdk8s-service-c844e1e1
                 port:
                   number: 80
             path: /
