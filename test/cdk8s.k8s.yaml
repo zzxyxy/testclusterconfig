@@ -29,3 +29,17 @@ spec:
           name: hello-kubernetes
           ports:
             - containerPort: 8080
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cdk8s-ingress-c85fbcda
+spec:
+  rules:
+    - host: test.localhost
+      http:
+        paths:
+          - backend:
+              service:
+                name: hello-k8s
+            pathType: Prefix
