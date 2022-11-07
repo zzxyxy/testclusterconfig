@@ -42,4 +42,7 @@ spec:
           - backend:
               service:
                 name: hello-k8s
+                port:
+                  name: service port
+                  number: 80
             pathType: Prefix
