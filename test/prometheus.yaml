@@ -8,11 +8,11 @@ metadata:
 spec:
   project: default
   source:
-    chart: prometheus-community
+    chart: prometheus
     repoURL: https://charts.helm.sh/stable
     targetRevision: latest
     helm:
-      releaseName: prometheus-community
+      releaseName: prometheus
   destination:
     namespace: monitoring
     server: https://kubernetes.default.svc
