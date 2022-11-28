@@ -14,9 +14,9 @@ spec:
     helm:
       releaseName: prometheus
       parameters:
-      - name: ingress.enabled
+      - name: server.ingress.enabled
         value: "true"
-      - name: ingress.hosts[0]
+      - name: server.ingress.hosts[0]
         value: prometheus.localhost
   destination:
     namespace: monitoring
