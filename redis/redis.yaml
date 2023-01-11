@@ -11,7 +11,7 @@ data:
 apiVersion: redis.redis.opstreelabs.in/v1beta1
 kind: Redis
 metadata:
-  name: redis-instance
+  name: redis
   namespace: redis
 spec:
   kubernetesConfig:
@@ -31,4 +31,3 @@ spec:
   securityContext:
     runAsUser: 1000
     fsGroup: 1000
-  serviceAccountName: redis
