@@ -20,7 +20,6 @@ spec:
     redisSecret:
       name: redispass
       key: password
-    serviceAccountName: redis
   storage:
     volumeClaimTemplate:
       spec:
@@ -32,3 +31,4 @@ spec:
   securityContext:
     runAsUser: 1000
     fsGroup: 1000
+  serviceAccountName: redis
