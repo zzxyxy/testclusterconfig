@@ -20,6 +20,7 @@ spec:
     redisSecret:
       name: redispass
       key: password
+    serviceAccountName: redis
   storage:
     volumeClaimTemplate:
       spec:
