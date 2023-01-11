@@ -10,4 +10,5 @@ k3d cluster create --api-port 6550 \
         -p "27017-27020:20017-20020@loadbalancer" \
         -p "9092:9092@loadbalancer" \
         -p "8001:8001@loadbalancer" \
-        --agents 2 live
+        -p "6379:6379@loadbalancer" \
+        --agents 2 test
